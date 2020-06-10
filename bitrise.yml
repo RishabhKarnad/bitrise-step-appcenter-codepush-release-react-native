@@ -19,6 +19,7 @@ workflows:
         - app_id: $APPCENTER_APP_ID
         - react_native_project_root: $REACT_NATIVE_PROJECT_ROOT
         - deployment: $DEPLOYMENT_NAME
+        - node_options: $NODE_OPTIONS
   audit-this-step:
     steps:
     - script:
