@@ -19,6 +19,8 @@ if [ ! -z "${react_native_project_root}" ] ; then
     fi
 fi
 
+export CODE_PUSH_NODE_ARGS=$node_options
+
 appcenter codepush release-react -a $app_id --token $api_token --quiet $options --deployment-name $deployment
 
 exit 0
